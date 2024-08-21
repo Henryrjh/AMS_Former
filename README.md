@@ -7,5 +7,5 @@ Please extract it and place it in the main directory.
 Dwonload datasets：https://pan.baidu.com/s/1ay1zWGGo9YnrMFwZhhqr0A (password: z7s4). 
 Please extract it and place it in the main directory.
 # Test
-You can run test.py to generate test results.
-Choice of test mode: mode1: rs_rgb_nir, mode2: rs_rgb_map, mode3: cv_rgb_inf, mode4: cv_rgb_nir.
+```You can run test.py to generate test results.
+Choice of test mode: mode1: rs_rgb_nir, mode2: rs_rgb_map, mode3: cv_rgb_inf, mode4: cv_rgb_nir.```
