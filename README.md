@@ -7,3 +7,4 @@ Please extract it and place it in the main directory.
 Dwonload datasets：https://pan.baidu.com/s/1ay1zWGGo9YnrMFwZhhqr0A (password: z7s4)
 Please extract it and place it in the main directory.
 # Test
+'python test.py
