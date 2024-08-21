@@ -13,5 +13,6 @@ Please extract it and place it in the main directory.
 You can run test.py to generate test results.
 
 ```python test.py```
+
 Choice of test mode: mode1: rs_rgb_nir, mode2: rs_rgb_map, mode3: cv_rgb_inf, mode4: cv_rgb_nir. Default mode is 'mode2'.
 
