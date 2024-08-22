@@ -14,5 +14,10 @@ You can run test.py to generate test results.
 
 ```python test.py --ref_dir dataset/rs_rgb_map/rgb --sen_dir dataset/rs_rgb_map/map --json_path dataset/rs_rgb_map/trans_info.json --result_dir results/rs_rgb_map --mode mode2 --device cuda```
 
-Choice of test mode: mode1: rs_rgb_nir, mode2: rs_rgb_map, mode3: cv_rgb_inf, mode4: cv_rgb_nir. Default mode is 'mode2'.
+You can run the following commands to generate other results.
 
+```python test.py --ref_dir dataset/rs_rgb_nir/rgb --sen_dir dataset/rs_rgb_nir/nir --json_path dataset/rs_rgb_nir/trans_info.json --result_dir results/rs_rgb_nir --mode mode1 --device cuda```
+
+```python test.py --ref_dir dataset/cv_rgb_inf/rgb --sen_dir dataset/cv_rgb_inf/inf --json_path dataset/cv_rgb_inf/trans_info.json --result_dir results/cv_rgb_inf --mode mode3 --device cuda```
+
+```python test.py --ref_dir dataset/cv_rgb_nir/rgb --sen_dir dataset/cv_rgb_nir/nir --json_path dataset/cv_rgb_nir/trans_info.json --result_dir results/cv_rgb_nir --mode mode4 --device cuda```
