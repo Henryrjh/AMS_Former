@@ -8,9 +8,6 @@ import math
 import matplotlib.pyplot as plt
 import matplotlib
 import argparse
-
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
-
 from AMS_Former import matcher
 
 def location_error(pt0, pt1, H):
@@ -18,7 +15,6 @@ def location_error(pt0, pt1, H):
     pt1_gt = cv2.perspectiveTransform(np.array([[pt0]]), H)   ### [w,h]
     error = np.linalg.norm(pt1_gt[0][0] - pt1)
     return error
-
 
 def make_matching_figure(
         img0, img1, mkpts0, mkpts1, color,
@@ -60,7 +56,6 @@ def make_matching_figure(
         plt.close()
     else:
         return fig
-
 
 def match_statistic():
 
@@ -143,27 +138,27 @@ def match_statistic():
 
     print(f'AVG_time: {str(avg_runtime)}, AVG_NOM: {str(avg_NOM)}, AVG_NCM: {str(avg_NCM)}, AVG_MA: {str(avg_pre)}, AVG_RMSE: {str(avg_RMSE)}, SR: {str(SR)}')
     
-
-parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-
-parser.add_argument('--ref_dir', type=str, default = 'dataset/rs_rgb_map/rgb' , help='reference image dir')
-parser.add_argument('--sen_dir', type=str, default = 'dataset/rs_rgb_map/map' , help='sensed image dir')
-parser.add_argument('--json_path', type=str, default = 'dataset/rs_rgb_map/trans_info.json' , help='transformation matrix')
-parser.add_argument('--result_dir', type=str, default = 'results/rs_rgb_map' , help='output dir')
-parser.add_argument('--mode', type=str, default = 'mode2' , choices=['mode1', 'mode2', 'mode3', 'mode4',],
-                    help='mode1: rs_rgb_nir, mode2: rs_rgb_map, mode3: cv_rgb_inf, mode4: cv_rgb_nir')
-parser.add_argument('--match_thresold', type=int, default = 3 , help='match_thresold')
-parser.add_argument('--device', type=str, default = 'cuda' , help='device')
-
-args = parser.parse_args()
-
-result_dir = args.result_dir
-visual_dir = os.path.join(result_dir, 'visual')
-metrics_csv = os.path.join(result_dir, 'metrics.csv')
-json_path = args.json_path
-input_dir = [args.ref_dir, args.sen_dir]
-match_thresold = args.match_thresold
-mode = args.mode
-device = args.device
-
-match_statistic()
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    
+    parser.add_argument('--ref_dir', type=str, default = 'dataset/rs_rgb_map/rgb' , help='reference image dir')
+    parser.add_argument('--sen_dir', type=str, default = 'dataset/rs_rgb_map/map' , help='sensed image dir')
+    parser.add_argument('--json_path', type=str, default = 'dataset/rs_rgb_map/trans_info.json' , help='transformation matrix')
+    parser.add_argument('--result_dir', type=str, default = 'results/rs_rgb_map' , help='output dir')
+    parser.add_argument('--mode', type=str, default = 'mode2' , choices=['mode1', 'mode2', 'mode3', 'mode4',],
+                        help='mode1: rs_rgb_nir, mode2: rs_rgb_map, mode3: cv_rgb_inf, mode4: cv_rgb_nir')
+    parser.add_argument('--match_thresold', type=int, default = 3 , help='match_thresold')
+    parser.add_argument('--device', type=str, default = 'cuda' , help='device')
+    
+    args = parser.parse_args()
+    
+    result_dir = args.result_dir
+    visual_dir = os.path.join(result_dir, 'visual')
+    metrics_csv = os.path.join(result_dir, 'metrics.csv')
+    json_path = args.json_path
+    input_dir = [args.ref_dir, args.sen_dir]
+    match_thresold = args.match_thresold
+    mode = args.mode
+    device = args.device
+    
+    match_statistic()
