@@ -1,7 +1,13 @@
 # AMS_Former
 This is the official code for AMS_Former.
 # Installation
-```python==3.8, einops==0.3.0, cryptography==43.0.0, torch==2.3.0```
+```python==3.8```
+
+```einops==0.3.0```
+
+```cryptography==43.0.0```
+
+```torch==2.3.0```
 
 # Download weights
 Download weights : https://pan.baidu.com/s/1g5qGGKq3DLQFX1d-NoUPUQ (password：p1iq). 
