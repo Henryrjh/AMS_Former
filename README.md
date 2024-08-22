@@ -12,7 +12,7 @@ Please extract it and place it in the main directory.
 # Test
 You can run test.py to generate test results.
 
-```python test.py```
+```python test.py --ref_dir dataset/rs_rgb_map/rgb --sen_dir dataset/rs_rgb_map/map --json_path dataset/rs_rgb_map/trans_info.json --result_dir results/rs_rgb_map --mode mode2 --device cuda```
 
 Choice of test mode: mode1: rs_rgb_nir, mode2: rs_rgb_map, mode3: cv_rgb_inf, mode4: cv_rgb_nir. Default mode is 'mode2'.
 
