@@ -9,6 +9,10 @@ This is the official code for AMS_Former.
 
 ```torch==2.3.0```
 
+```numpy==1.24.4```
+
+```pandas==2.0.3```
+
 # Download weights
 Download weights : https://pan.baidu.com/s/1g5qGGKq3DLQFX1d-NoUPUQ (password：p1iq). 
 Please extract it and place it in the main directory.
