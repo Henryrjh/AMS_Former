@@ -13,6 +13,12 @@ This is the official code for AMS_Former.
 
 ```pandas==2.0.3```
 
+```matploylib==3.7.5```
+
+```opencv-python==4.4.0.46```
+
+```timm=1.0.3```
+
 # Download weights
 Download weights : https://pan.baidu.com/s/1g5qGGKq3DLQFX1d-NoUPUQ (password：p1iq). 
 Please extract it and place it in the main directory.
