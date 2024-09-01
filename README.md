@@ -39,7 +39,7 @@ You can run the following commands to generate other results.
 ```python test.py --ref_dir dataset/cv_rgb_nir/rgb --sen_dir dataset/cv_rgb_nir/nir --json_path dataset/cv_rgb_nir/trans_info.json --result_dir results/cv_rgb_nir --mode mode4 --device cuda```
 
 # Test on your own images!
-The following command are provided to allow you to test your own dataset!
+The following command is provided to allow you to test your own dataset!
 
 ```python test_singlepair.py -ref_path your_ref_image_path -sen_path your_sen_iamge_path -result_path match_result_path --mode mode1 --device cuda```
 
