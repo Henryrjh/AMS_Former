@@ -18,10 +18,6 @@ This is the official code for AMS_Former.
 ```opencv-python==4.4.0.46```
 
 ```timm==1.0.3```
-
-# Download weights
-Download weights : https://pan.baidu.com/s/1g5qGGKq3DLQFX1d-NoUPUQ (password：p1iq). 
-Please extract it and place it in the main directory.
 # Download datasets
 Download datasets：https://pan.baidu.com/s/1hB4KJF8zs20SLdgBDV9-vw  (password: 9y3t). 
 Please extract it and place it in the main directory.
