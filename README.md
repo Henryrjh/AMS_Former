@@ -1,5 +1,7 @@
 # AMS_Former
 This is the official code for AMS_Former.
+![AMS-Former](1.png)
+
 # Installation
 ```python==3.8```
 
