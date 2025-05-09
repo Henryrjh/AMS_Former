@@ -12,4 +12,4 @@ Download datasets：https://pan.baidu.com/s/1hB4KJF8zs20SLdgBDV9-vw  (password: 
 Please extract it and place it in the main directory.
 
 # Train
-Once we have organized the code, we will release it.
+Once our paper is accepted, we will release the code.
