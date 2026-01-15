@@ -1,0 +1,9 @@
+torch
+timm
+einops
+opencv-python
+numpy
+pandas
+matplotlib
+scipy
+cryptography
