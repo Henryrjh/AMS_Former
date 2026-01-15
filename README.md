@@ -4,7 +4,7 @@ This is the official code for AMS_Former.
 
 ![Results](2.png)
 
-## Installation
+## Installation (Only Linux)
 
 ```pip install -r requirements.txt```
 
