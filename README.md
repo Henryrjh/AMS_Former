@@ -1,8 +1,7 @@
 # AMS_Former
 This is the official code for AMS_Former.
-![AMS-Former](1.png)
+![AMS-Former](framework.png)
 
-![Results](2.png)
 
 ## Installation (Only Linux)
 
