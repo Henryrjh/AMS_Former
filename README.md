@@ -4,19 +4,9 @@ This is the official code for AMS_Former.
 
 ![Results](2.png)
 
-## Requirements
+## Installation
 
-```python=3.8```
-```einops```
-```torch```
-```numpy```
-```tqdm```
-```opencv-python```
-```pandas```
-```timm```
-```scipy```
-```matplotlib```
-```cryptography```
+```pip install -r requirements.txt```
 
 # Download datasets
 Download datasets：https://pan.baidu.com/s/1hB4KJF8zs20SLdgBDV9-vw  (password: 9y3t). 
