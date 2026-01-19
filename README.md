@@ -1,5 +1,5 @@
 # AMS_Former
-This is the official code for AMS_Former.
+This is the official code for AMS_Former. https://www.sciencedirect.com/science/article/pii/S0924271626000213
 ![AMS-Former](framework.png)
 
 # Results
