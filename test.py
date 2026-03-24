@@ -12,7 +12,7 @@ from datetime import datetime, timedelta, timezone
 from scipy.io import savemat
 
 
-from AMS_Former.AMS_Former import matcher
+from AMS_former.AMS_Former import matcher
 
 def location_error(pt0, pt1, H):
     ### H: the GT pts0--->pts1
