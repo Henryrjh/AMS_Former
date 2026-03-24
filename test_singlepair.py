@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 import argparse
 
-from AMS_Former.AMS_Former import matcher
+from AMS_former.AMS_Former import matcher
 
 def make_matching_figure(
         img0, img1, mkpts0, mkpts1, color,
