@@ -10,14 +10,14 @@ This is the official code for AMS_Former. https://www.sciencedirect.com/science/
 ```pip install -r requirements.txt```
 
 # Download weights
-https://pan.baidu.com/s/1B6y9SyU0EAWCA0UwcyRBwQ?pwd=dapr
 
-Download and extract it, and place it in the root directory.
-
-# Download datasets
 Download datasets：https://pan.baidu.com/s/1r3ZRlB2RIX98i0UG4j5ZRA?pwd=5m9j
 
 Please download and extract it, then rename `AMS_weights` to `weights` and place it in the project root directory.
+
+
+# Download datasets
+
 
 # Test
 
