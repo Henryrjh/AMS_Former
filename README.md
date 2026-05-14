@@ -17,11 +17,11 @@ Please download and extract it, then rename `AMS_weights` to `weights` and place
 
 
 # Download datasets
-
+https://pan.baidu.com/s/1sEE5RknBj4RMZk4SC3UOjQ?pwd=tgxq
 
 # Test
 
-The code is being organized.
+python
 
 ## Thank you！
 If you find our code useful, please consider adding the following citation:
