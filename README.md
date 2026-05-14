@@ -15,9 +15,9 @@ https://pan.baidu.com/s/1B6y9SyU0EAWCA0UwcyRBwQ?pwd=dapr
 Download and extract it, and place it in the root directory.
 
 # Download datasets
-Download datasets：https://pan.baidu.com/s/1NIHlmTg34VVsedGOSzbkiw?pwd=rkei 
+Download datasets：https://pan.baidu.com/s/1r3ZRlB2RIX98i0UG4j5ZRA?pwd=5m9j
 
-Download and extract it, and place it in the root directory.
+Please download and extract it, then rename `AMS_weights` to `weights` and place it in the project root directory.
 
 # Test
 
