@@ -21,8 +21,39 @@ https://pan.baidu.com/s/1sEE5RknBj4RMZk4SC3UOjQ?pwd=tgxq
 
 # Test
 
-python
-
+For RGB-NIR:
+```
+python test.py \
+    --ref_dir AMS_datasets/rgb_nir/rgb \
+    --sen_dir AMS_datasets/rgb_nir/nir \
+    --json_path trans_info.json \
+    --result_dir results/rgb_nir \
+    --mode mode1 \
+    --match_thresold 3 \
+    --device cuda
+```
+For SGM-SM:
+```
+python test.py \
+    --ref_dir AMS_datasets/sgm_sm/sgm \
+    --sen_dir AMS_datasets/sgm_sm/sm \
+    --json_path trans_info.json \
+    --result_dir results/sgm_sm \
+    --mode mode2 \
+    --match_thresold 3 \
+    --device cuda
+```
+For RGB-LWIR:
+```
+python test.py \
+    --ref_dir AMS_datasets/rgb_lwir/rgb \
+    --sen_dir AMS_datasets/rgb_lwir/lwir \
+    --json_path trans_info.json \
+    --result_dir results/rgb_lwir \
+    --mode mode3 \
+    --match_thresold 3 \
+    --device cuda
+```
 ## Thank you！
 If you find our code useful, please consider adding the following citation:
 
