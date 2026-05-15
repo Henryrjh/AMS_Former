@@ -11,71 +11,35 @@ This is the official code for AMS_Former. https://www.sciencedirect.com/science/
 
 # Download weights
 
-Download datasets：https://pan.baidu.com/s/1r3ZRlB2RIX98i0UG4j5ZRA?pwd=5m9j
+Download datasets: https://pan.baidu.com/s/1Q5cplJHkHxBHcXBKdcP6qA?pwd=5gdy
 
 Please download and extract it, then rename `AMS_weights` to `weights` and place it in the project root directory.
 
 
 # Download datasets
-https://pan.baidu.com/s/1sEE5RknBj4RMZk4SC3UOjQ?pwd=tgxq
+https://pan.baidu.com/s/1Ku1Aya9prYw-fsAYCcAkiQ?pwd=z4jb
 
 # Test
 
 For RGB-NIR:
-```
-python test.py \
-    --ref_dir AMS_datasets/rgb_nir/rgb \
-    --sen_dir AMS_datasets/rgb_nir/nir \
-    --json_path trans_info.json \
-    --result_dir results/rgb_nir \
-    --mode mode1 \
-    --match_thresold 3 \
-    --device cuda
-```
+``` python test.py --ref_dir datasets/RGB-NIR/RGB --sen_dir datasets/RGB-NIR/NIR --json_path datasets/RGB-NIR/trans_info.json --results_dir results/RGB-NIR --mode mode1```
+The results will be saved at "results/RGB-NIR"
+
 For SGM-SM:
-```
-python test.py \
-    --ref_dir AMS_datasets/sgm_sm/sgm \
-    --sen_dir AMS_datasets/sgm_sm/sm \
-    --json_path trans_info.json \
-    --result_dir results/sgm_sm \
-    --mode mode2 \
-    --match_thresold 3 \
-    --device cuda
-```
+``` python test.py --ref_dir datasets/SGM-SM/SGM --sen_dir datasets/SGM-SM/SM --json_path datasets/SGM-SM/trans_info.json --results_dir results/SGM-SM --mode mode2```
+The results will be saved at "results/SGM-SM"
+
 For RGB-LWIR:
-```
-python test.py \
-    --ref_dir AMS_datasets/rgb_lwir/rgb \
-    --sen_dir AMS_datasets/rgb_lwir/lwir \
-    --json_path trans_info.json \
-    --result_dir results/rgb_lwir \
-    --mode mode3 \
-    --match_thresold 3 \
-    --device cuda
-```
-For RGB-NDepth:
-```
-python test.py \
-    --ref_dir AMS_datasets/rgb_depth/rgb \
-    --sen_dir AMS_datasets/rgb_depth/depth \
-    --json_path trans_info.json \
-    --result_dir results/rgb_depth \
-    --mode mode1 \
-    --match_thresold 3 \
-    --device cuda
-```
+``` python test.py --ref_dir datasets/RGB-LWIR/RGB --sen_dir datasets/RGB-LWIR/LWIR --json_path datasets/RGB-LWIR/trans_info.json --results_dir results/RGB-LWIR --mode mode3```
+The results will be saved at "results/RGB-NIR"
+
+For RGB-Ndepth:
+``` python test.py --ref_dir datasets/RGB-Ndepth/RGB --sen_dir datasets/RGB-Ndepth/Ndepth --json_path datasets/RGB-Ndepth/trans_info.json --results_dir results/RGB-Ndepth --mode mode1```
+The results will be saved at "results/RGB-NIR"
+
 For RGB-RGB:
-```
-python test.py \
-    --ref_dir AMS_datasets/rgb_rgb/rgb1 \
-    --sen_dir AMS_datasets/rgb_rgb/rgb2 \
-    --json_path trans_info.json \
-    --result_dir results/rgb_rgb \
-    --mode mode1 \
-    --match_thresold 3 \
-    --device cuda
-```
+``` python test.py --ref_dir datasets/RGB-RGB/RGB1 --sen_dir datasets/RGB-RGB/RGB2 --json_path datasets/RGB-RGB/trans_info.json --results_dir results/RGB-RGB --mode mode1```
+The results will be saved at "results/RGB-RGB"
 
 ## Thank you！
 If you find our code useful, please consider adding the following citation:
