@@ -65,7 +65,17 @@ python test.py \
     --match_thresold 3 \
     --device cuda
 ```
-
+For RGB-RGB:
+```
+python test.py \
+    --ref_dir AMS_datasets/rgb_rgb/rgb1 \
+    --sen_dir AMS_datasets/rgb_rgb/rgb2 \
+    --json_path trans_info.json \
+    --result_dir results/rgb_rgb \
+    --mode mode1 \
+    --match_thresold 3 \
+    --device cuda
+```
 
 ## Thank you！
 If you find our code useful, please consider adding the following citation:
